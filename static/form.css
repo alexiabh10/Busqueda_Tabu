@@ -1,0 +1,68 @@
+.container {
+    /* Asignando propiedad grid	*/
+    display: grid;
+    place-items: center;
+    /* Ocupa el 100% de la ventana visible viuport height*/
+    height: 100vh;
+	 background-color: "#5d6d7e" ;
+}
+
+
+.form {
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    width: 300px;
+    display: grid;
+	 grid-template-areas: 
+	 "titulo"
+	 "nombre"
+	 "latitud"
+	 "longitud"
+	 "btn";
+
+    text-align: center;
+}
+
+.titulo{
+	grid-area: titulo;
+	padding:10px;
+}
+
+.form .nombre{
+   grid-area: nombre;
+	padding:10px
+}
+
+.form .latitud{
+   grid-area: latitud;
+	padding: 10px;
+}
+
+.longitud{
+   grid-area: longitud;
+	padding: 10px;
+}
+
+
+/* Botones */
+.btn{
+	 grid-area: btn;
+    margin: 0px 20px 0px;
+    padding: 10px;
+    border-radius:5px;
+
+    color: black;
+    background-color: white;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover{
+   background-color: black;
+   color: white;
+}
+

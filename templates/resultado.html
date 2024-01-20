@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados del TSP</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/form.css') }}">
+</head>
+<body bgcolor="#D394F4">
+    <div class="container">
+    <h1 style="color: #eef0f0;" > La Mejor Ruta calculada:</h1>
+    <ul>
+        {% for ciudad in ruta %}
+            <li>{{ ciudad }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h1 style="color: #eef0f0;">Distancia total:</h1>
+    <h3>{{ distancia_total }}</h3>
+    </div>
+</body>
+</html>

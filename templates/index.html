@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruta mas Corta</title>
+	 <link rel="stylesheet" href="{{ url_for('static' , filename='styles/form.css') }}">
+</head>
+<body bgcolor="#D394F4">
+  <div class="container">	  
+    
+    <!--<form method="POST" action="/registrar_ciudad" >
+      <h3 class="titulo">Registrar Persistencia e Iteraciones</h3>	
+      <br><br>				
+		  <input class="persistencia" placeholder="persistencia" type="text" name="persistencia" required><br><br>
+        <input class="iteraciones" placeholder="iteraciones" type="text" name="iteraciones" required><br><br>
+    -->
+       <!-- <input class="btn" type="submit" value="Enviar">-->
+   <!-- </form>-->
+    
+    <form method="GET" action="/mostrar_evaluacion">
+        <input class="btn" type="submit" value="Calcular Distancia">
+    </form>
+
+    {% if error_msg %} 
+    <p style="color: red;">{{ error_msg }}</p>
+    {% endif %} 
+  </div>	 
+</body>
+</html>
+
